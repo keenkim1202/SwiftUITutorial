@@ -81,8 +81,8 @@
 		1CBF5A1B276075370032FECB /* View */ = {
 			isa = PBXGroup;
 			children = (
-				1CBF5A42276096C80032FECB /* Categories */,
 				1CE7E9F9275F3E7B0094CFCB /* ContentView.swift */,
+				1CBF5A42276096C80032FECB /* Categories */,
 				1CBF5A2627608C670032FECB /* Landmarks */,
 				1CBF5A34276090FE0032FECB /* badges */,
 				1CBF5A2727608C6E0032FECB /* Helpers */,

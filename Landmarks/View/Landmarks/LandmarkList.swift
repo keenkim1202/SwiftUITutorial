@@ -31,8 +31,9 @@ struct LandmarkList: View {
             LandmarkRow(landmark: landmark)
           }
         }
-        .navigationTitle("Landmarks")
       }
+      .listStyle(.plain)
+      .navigationTitle("Landmarks")
     }
   }
 }
