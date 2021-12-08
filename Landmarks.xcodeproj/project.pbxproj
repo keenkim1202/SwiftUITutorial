@@ -15,6 +15,7 @@
 		1CBF5A1F276075BE0032FECB /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBF5A1E276075BE0032FECB /* LandmarkRow.swift */; };
 		1CBF5A21276077970032FECB /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBF5A20276077970032FECB /* LandmarkList.swift */; };
 		1CBF5A2327607BA10032FECB /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBF5A2227607BA10032FECB /* LandmarkDetail.swift */; };
+		1CBF5A2527608BCD0032FECB /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBF5A2427608BCD0032FECB /* FavoriteButton.swift */; };
 		1CE7E9F8275F3E7B0094CFCB /* LandmarksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE7E9F7275F3E7B0094CFCB /* LandmarksApp.swift */; };
 		1CE7E9FA275F3E7B0094CFCB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE7E9F9275F3E7B0094CFCB /* ContentView.swift */; };
 		1CE7E9FC275F3E7C0094CFCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CE7E9FB275F3E7C0094CFCB /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 		1CBF5A1E276075BE0032FECB /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
 		1CBF5A20276077970032FECB /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
 		1CBF5A2227607BA10032FECB /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
+		1CBF5A2427608BCD0032FECB /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		1CE7E9F4275F3E7B0094CFCB /* Landmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Landmarks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CE7E9F7275F3E7B0094CFCB /* LandmarksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarksApp.swift; sourceTree = "<group>"; };
 		1CE7E9F9275F3E7B0094CFCB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,11 +54,8 @@
 			isa = PBXGroup;
 			children = (
 				1CE7E9F9275F3E7B0094CFCB /* ContentView.swift */,
-				1CBF5A1127606BEF0032FECB /* CircleImage.swift */,
-				1CBF5A1327606CFD0032FECB /* MapView.swift */,
-				1CBF5A1E276075BE0032FECB /* LandmarkRow.swift */,
-				1CBF5A20276077970032FECB /* LandmarkList.swift */,
-				1CBF5A2227607BA10032FECB /* LandmarkDetail.swift */,
+				1CBF5A2627608C670032FECB /* Landmarks */,
+				1CBF5A2727608C6E0032FECB /* Helpers */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -76,6 +75,26 @@
 				1CBF5A15276071D30032FECB /* landmarkData.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		1CBF5A2627608C670032FECB /* Landmarks */ = {
+			isa = PBXGroup;
+			children = (
+				1CBF5A1E276075BE0032FECB /* LandmarkRow.swift */,
+				1CBF5A20276077970032FECB /* LandmarkList.swift */,
+				1CBF5A2227607BA10032FECB /* LandmarkDetail.swift */,
+			);
+			path = Landmarks;
+			sourceTree = "<group>";
+		};
+		1CBF5A2727608C6E0032FECB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1CBF5A1127606BEF0032FECB /* CircleImage.swift */,
+				1CBF5A1327606CFD0032FECB /* MapView.swift */,
+				1CBF5A2427608BCD0032FECB /* FavoriteButton.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		1CE7E9EB275F3E7B0094CFCB = {
@@ -189,6 +208,7 @@
 				1CE7E9FA275F3E7B0094CFCB /* ContentView.swift in Sources */,
 				1CBF5A1427606CFD0032FECB /* MapView.swift in Sources */,
 				1CBF5A18276071F50032FECB /* Landmark.swift in Sources */,
+				1CBF5A2527608BCD0032FECB /* FavoriteButton.swift in Sources */,
 				1CBF5A21276077970032FECB /* LandmarkList.swift in Sources */,
 				1CBF5A2327607BA10032FECB /* LandmarkDetail.swift in Sources */,
 				1CBF5A1A276073B30032FECB /* ModelData.swift in Sources */,
