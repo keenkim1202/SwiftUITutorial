@@ -6,11 +6,13 @@
 //
 
 import Foundation
+import Combine
 
-// Create a load(_:) method that fetches JSON data with a given name from the app’s main bundle.
-// load() : 앱의 main bundle로부터 주어진 이름으로 JSON 데이터를 가져온다.
-
-var landmarks: [Landmark] = load("landmarkData.json")
+// SwiftUI subscribes to your observable object, and updates any views that need refreshing when the data changes.
+final class ModelData: ObservableObject {
+  //  An observable object needs to publish any changes to its data, so that its subscribers can pick up the change.
+  @Published var landmarks: [Landmark] = load("landmarkData.json")
+}
 
 func load<T: Decodable>(_ filename: String) -> T {
   let data: Data
