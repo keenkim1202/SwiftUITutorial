@@ -8,10 +8,9 @@
 import Foundation
 import Combine
 
-// SwiftUI subscribes to your observable object, and updates any views that need refreshing when the data changes.
 final class ModelData: ObservableObject {
-  //  An observable object needs to publish any changes to its data, so that its subscribers can pick up the change.
   @Published var landmarks: [Landmark] = load("landmarkData.json")
+  var hikes: [Hike] = load("hikeData.json")
 }
 
 func load<T: Decodable>(_ filename: String) -> T {
