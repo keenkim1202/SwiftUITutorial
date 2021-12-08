@@ -11,7 +11,7 @@ import CoreLocation
 
 // Codable : data file과 구조체 사이의 데이터 이동을 쉽게 해주기 위해 사용한다.
 // Codable의 Decodable 컴포넌트에 의존하여 file로부터 데이터를 읽어올 것.
-struct Landmark: Hashable, Codable {
+struct Landmark: Hashable, Codable, Identifiable {
   var id: Int
   var name: String
   var park: String
